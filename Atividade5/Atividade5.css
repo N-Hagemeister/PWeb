@@ -1,0 +1,83 @@
+/* Base */
+#colorBox {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 50px auto;
+}
+
+/* Cinza até 420px */
+@media (max-width: 420px) {
+  #colorBox {
+    background-color: gray;
+  }
+  #colorBox h2::before {
+    content: "CINZA";
+  }
+}
+
+/* Laranja >420px até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+  #colorBox {
+    background-color: orange;
+  }
+  #colorBox h2::before {
+    content: "LARANJA";
+  }
+}
+
+/* Pink >768px até 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #colorBox {
+    background-color: magenta;
+  }
+  #colorBox h2::before {
+    content: "ROSA";
+  }
+}
+
+/* Vermelho >1024px até 1080px */
+@media (min-width: 1025px) and (max-width: 1080px) {
+  #colorBox {
+    background-color: #d66; /* vermelho claro */
+  }
+  #colorBox h2::before {
+    content: "VERMELHO";
+  }
+}
+
+/* Roxo >1080px até 1366px */
+@media (min-width: 1081px) and (max-width: 1366px) {
+  #colorBox {
+    background-color: rebeccapurple;
+  }
+  #colorBox h2::before {
+    content: "ROXO";
+  }
+}
+
+/* Amarelo >1366px até 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  #colorBox {
+    background-color: goldenrod;
+  }
+  #colorBox h2::before {
+    content: "AMARELO";
+  }
+}
+
+/* Verde >1920px */
+@media (min-width: 1921px) {
+  #colorBox {
+    background-color: green;
+  }
+  #colorBox h2::before {
+    content: "VERDE";
+  }
+}
